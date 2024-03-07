@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <body>
+        <div class="cont">
+            <div id="game" class="game">
+                <div id="snake" class="snake"><span id="pause"></span></div>
+                <div id="apple" class="apple"></div>
+            </div>
+            <div class="data">
+                <div id="forScore">
+                    <p class="score">Score: <span id="score">0</span></p>
+                    <p class="score">Recent score: <span id='rec'>0</span></p>
+                </div>
+                <div id="control">
+                    <img id="w" src="https://cdn.discordapp.com/attachments/1207026774429405254/1215342695615168562/image.png?ex=65fc6716&is=65e9f216&hm=3dbb4fe0a15856f751d0127bc7f13e610b7cb51b32251c1a2d19f93a5d6fb401&" class="ups" onclick="w()"><br>
+                    <!-- <button id="w" class="ups" onclick="w()">up</button><br> -->
+                    <img id="a" src="https://cdn.discordapp.com/attachments/1207026774429405254/1215342742897434734/image.png?ex=65fc6721&is=65e9f221&hm=695f2a5f83d87d2b8dba9d92e53249e7b06180515a163d262535007a8ef4ab0e&" class="lr" onclick="a()">
+                    <img id="d" src="https://cdn.discordapp.com/attachments/1207026774429405254/1215342781300744313/image.png?ex=65fc672b&is=65e9f22b&hm=2f4db7057247f12e97dcc2af6b5e99539f28e8aa4e3d8378d443ce620937adac&" class="lr" onclick="d()"><br>
+                    <img src="https://cdn.discordapp.com/attachments/1207026774429405254/1215342805107613696/image.png?ex=65fc6730&is=65e9f230&hm=8f8427fa66da143386814ab30f8dfdeca0c462fd971276511c8d2e001bab27ba&" alt="" id="s" class="ups"><br><br>
+                    <button id="reset" onclick="res()">Reset</button>
+                </div>
+            </div>
+        </div>
+        <p id="lose">You Lose</p>
+        <script src="index.js"></script>
+    </body>
+</html>

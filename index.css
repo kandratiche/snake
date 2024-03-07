@@ -1,0 +1,130 @@
+.cont {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.game {
+    display: inline-flex;
+    background-color: green;
+    width: 1400px;
+    height: 900px;
+}
+
+.data {
+    display: block;
+    position: relative;
+    background-color: white;
+    width: 505px;
+    height: 900px;
+}
+
+#forScore, #control {
+    width: 50%;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.lr, .ups {
+    color: white;
+    background-color: black;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#d {
+    margin-left: 20%;
+}
+
+#s {
+    margin-top: 0;
+}
+.lr{
+    margin-top: 0;
+    margin-left: 4%;
+}
+.ups {
+    margin-left: 25%;
+}
+
+.snake {
+    background-image: url(https://cdn-icons-png.flaticon.com/256/194/194210.png);
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+#reset {
+    margin-left: 55%;
+    border-radius: 5%;
+    color: white;
+    background-color: black;
+    border: 0;
+    width: 200px;
+    height: 30px;
+}
+
+
+p, span {
+    font-size: 30pt;
+}
+
+#lose {
+    display: none;
+    position: fixed;
+    font-size: 100pt;
+    margin-top: -550px;
+    margin-left: 22%;
+}
+
+.apple {
+    background-image: url(https://freesvg.org/img/simple-apple.png);
+    background-size: 100%;
+    margin-left: 13;
+    margin-top: 12;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+}
+
+
+@media (max-width: 900px) {
+    .cont {
+        display: block;
+    }
+    .game {
+        width: 100%;
+        height: 500px;
+    }
+    .data {
+        display: inline-flex;
+        width: 100%;
+        height: 285px;
+    }
+    .score, span {
+        font-size: 20px;
+    }
+    .snake {
+        width: 50px;
+        height: 50px;
+    }
+    .apple {
+        width: 50px;
+        height: 50px;
+    }
+    #reset {
+        margin-left: -50%;
+        border-radius: 5%;
+        color: white;
+        background-color: black;
+        border: 0;
+        width: 200px;
+        height: 30px;
+    }
+}
